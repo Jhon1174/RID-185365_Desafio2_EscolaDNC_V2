@@ -1,0 +1,419 @@
+html{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+h1 {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+.header {
+    background-color: #02A28F;
+    color: #FFFFFF;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    padding-left: 11%;
+    padding-right: 12%;
+}
+.container{
+    padding-left: 11%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 65.5% 34.5%;
+    gap: 1.5rem;
+}
+.main, .nav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.section-opinion{
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%), url(./assets/opinion-img.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 46.5rem;
+    height: 24.75rem;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    align-content: end;
+}
+.section-opinion:hover{
+    cursor: pointer;
+}
+.section-opinion > p {
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+.section-opinion > p:last-child{
+    padding-bottom: 1.5rem;
+}
+
+.section-opinion > h2 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.post-title{
+    width: 46.5rem;
+    height: 3.5rem;
+    background-color: #02A28F;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+#title{
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+}
+#see-all{
+    text-align: right;
+    padding-right: 1.5rem;
+    text-decoration:underline;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+a:hover {
+    cursor: pointer;
+}
+.section-cards{
+    width: 46.5rem;
+}
+.cards-container{
+    padding-top: 0.75rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+.cards-container > div:hover{
+    cursor: pointer;
+}
+.card{
+    width: 22.5rem;
+    height: 24.75rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 4px #dfdedefd;
+    border: 0;
+}
+.card > img{
+    width: 100%;
+    height: 12rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    object-fit: cover;
+}
+.card > ul{
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+.card > ul > li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+.saude > ul > li{
+    padding-bottom: 0.65rem;
+}
+#card-theme{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: left;
+    color: #02A28F;
+}
+#card-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #000000;
+}
+#card-author{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #616161;
+}
+#card-content{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: left;
+    color: #000000;
+}
+#card-date{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #616161;
+}
+.nav-title{
+    width: 22.5rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    background-color: #02A28F;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.nav-title > h3 {
+    padding-left: 1.5rem;
+}
+.post{
+    width: 22.5rem;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 8px #dfdedefd;
+    margin-top: 1.25rem;
+}
+.post > img {
+    width: 8.25rem;
+    height: 4.375rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    margin-left: 0.75rem;
+    margin-top: 0.75rem;
+}
+#post-subject{
+    margin: 0.75rem 0;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: left;
+    color: #000000;
+}
+#post-date{
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.875rem;
+    text-align: left;
+    color: #616161;
+}
+.post:hover{
+    cursor: pointer;
+}
+.aside-categories{
+    width: 22.5rem;
+    height: 11.5rem;
+}
+#categories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 22.5rem;
+}
+#categories > ul {
+    padding: 0;
+}
+#categories > ul > li {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 0.875rem;
+    color: #616161;
+    list-style: none;
+    cursor: pointer;
+}
+#categories-quantities{
+    text-align: right;
+}
+.footer{
+    background-color: #02A28F;
+    color: #FFFFFF;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.footer > h3 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 17.07px;
+}
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+    
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .header {
+        padding-left: 5%;
+        padding-right: 12%;
+    }
+    .container{
+        padding-left: 5%;
+        padding-right: 1%;
+        display: grid;
+        grid-template-columns: 60% 30%;
+        gap: 1.5rem;
+    }
+    .section-opinion{
+        width: 100%;
+    }
+    .post-title{
+        width: 100%;
+    }
+    .section-cards{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 100%;  
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width:1022px) {
+    h1 {
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        padding-right: auto;
+        align-items: center;
+    }
+    .cards-container{
+        padding-bottom: 0;
+    }
+    .nav-posts-container > div:last-child{
+        margin-bottom: 1.5rem;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 22.5rem 22.5rem;
+        gap: 1.5rem;
+    }
+}   
+@media only screen and (min-width: 372px) and (max-width: 767px){
+    h1{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .header{
+        text-align:center;
+        margin-bottom: 1.5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        align-items: center;
+    }
+    .cards-container{
+        padding-top: 0.75rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .section-opinion{
+        width: 100%;
+    }
+    .post-title{
+        width: 100%;
+    }
+    .section-cards{
+        width: 100%;
+    }
+}
+    
+@media only screen and (max-width: 371px){
+    h1{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .header{
+        display: flex;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 100%;
+    }
+    .cards-container{
+        padding-top: 0.75rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .section-opinion{
+        width: 100%;
+    }
+    .post-title{
+        width: 100%;
+    }
+    .section-cards{
+        width: 100%;
+    }
+    #card-title{
+        font-size: 1rem;
+    }
+    .card{
+        width: 100%;
+    }
+    .card > ul > li {
+        padding-bottom: 0.1rem;
+    }
+    .nav-title{
+        width: 100%;
+    }
+    .post{
+        width: 100%;
+    }
+    #categories{
+        width: 90%;
+    }
+    #categories > ul > li {
+        font-size: 0.9rem;
+    }
+}
